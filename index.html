@@ -2,7 +2,170 @@
 <html lang="en">
   <head>
     <title>Shervin's Resume</title>
-    <link rel="stylesheet" href="./index.css" />
+    <style>
+      /* Reset css */
+      html, body, div, span, applet, object, iframe,
+      h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+      a, abbr, acronym, address, big, cite, code,
+      del, dfn, em, img, ins, kbd, q, s, samp,
+      small, strike, strong, sub, sup, tt, var,
+      b, u, i, center,
+      dl, dt, dd, ol, ul, li,
+      fieldset, form, label, legend,
+      table, caption, tbody, tfoot, thead, tr, th, td,
+      article, aside, canvas, details, embed, 
+      figure, figcaption, footer, header, hgroup, 
+      menu, nav, output, ruby, section, summary,
+      time, mark, audio, video {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
+      }
+      /* HTML5 display-role reset for older browsers */
+      article, aside, details, figcaption, figure, 
+      footer, header, hgroup, menu, nav, section {
+        display: block;
+      }
+      body {
+        line-height: 1;
+      }
+      ol, ul {
+        list-style: none;
+      }
+      blockquote, q {
+        quotes: none;
+      }
+      blockquote:before, blockquote:after,
+      q:before, q:after {
+        content: '';
+        content: none;
+      }
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
+
+      /* main css */
+
+      body {
+        padding: 24px;
+        max-width: 768px;
+        margin: 0 auto;
+
+        font-family: -apple-system, BlinkMacSystemFont,
+          "Segoe UI", "Roboto", "Oxygen",
+          "Ubuntu", "Cantarell", "Fira Sans",
+          "Droid Sans", "Helvetica Neue", sans-serif;
+
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        text-rendering: optimizeLegibility;
+
+        font-size: 12px;
+      }
+
+      /* Typeography */
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      h3 {
+        font-size: 20px;
+      }
+
+      h4 {
+        font-size: 16px;
+      }
+
+      p {
+        font-size: 12px;
+        line-height: 20px;
+      }
+
+      a {
+        text-decoration: none;
+      }
+
+      /* helpers */
+      .tac {
+        text-align: center;
+      }
+
+      .bold {
+        font-weight: 600;
+      }
+
+      .pv1 {
+        padding-top: 8px;
+        padding-bottom: 8px;
+      }
+
+      .pr1 {
+        padding-right: 8px;
+      }
+
+      .pb1 {
+        padding-bottom: 8px;
+      }
+
+      .pb2 {
+        padding-bottom: 16px;
+      }
+
+      .p1 {
+        padding: 8px;
+      }
+
+      .ml1 {
+        margin-left: 8px;
+      }
+
+      .ml3 {
+        margin-left: 24px;
+      }
+
+      .bp {
+        list-style-type: disc;
+      }
+
+      /* classes */
+
+      .avatarContainer {
+        display: flex;
+        justify-content: center;
+      }
+
+      .avatar {
+        width: 72px;
+        height: 72px;
+        border-radius: 50%;
+      }
+
+      .socialMedia {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .socialMedia > li > a {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+      }
+
+      .block {
+        padding: 20px 0;
+      }
+    </style>
   </head>
   <body>
     <div class="avatarContainer pb2">
@@ -99,7 +262,7 @@
           <p class="pb1"><span class="bold">Envato</span> | <a href="https://themeforest.net">Discovery</a> | Mar 2016 - Jul 2016 (5 mos)</p>
           <p class="pb1">Senior Engineer in the Discovery team at Envato</p>
           <ul class="bp ml3">
-            <li><p>Helped build and maintain search systems in the envato marketplaces.</p></li>
+            <li><p>Helped build and maintain search systems in the Envato marketplaces.</p></li>
             <li><p>Ran a self-hosted Elasticsearch cluster + systems to manage indexing and displaying search results.</p></li>
             <li><p>Lead project to built custom search and item recommendation system (Hadoop, Elixir/ EMR).</p></li>
             <li><p>Built performant and geographically distributed autosuggest service.</p></li>
@@ -114,7 +277,7 @@
             <li><p>One of 2 developers that led the project to design, build and launch the Envato Video iOS app, from idea to production.</p></li>
             <li><p>Built a highly scalable rendering backend which could edit, preview, render, watermark and encode Adobe After Effects and Blender projects from a mobile app which would allow users to modify visually complex templates.</p></li>
             <li><p>Designed infrastructure stack that would run our backend on thousands of servers, scaling up and down on demand when needed.</p></li>
-            <li><p>Designed and built real time 3D rendering engine (c++ & opengl) which could render blender templates client-side on users devices making the need for a costly render farm redundant.</p></li>
+            <li><p>Designed and built real time 3D rendering engine (c++ & OpenGL) which could render blender templates client-side on users devices making the need for a costly render farm redundant.</p></li>
             <li><p>Helped lead 2 rounds of technical due diligence on companies we were looking to buy, one at the beginning of the project, and one at the end which led to the acquisition of placeit by envato.</p></li>
           </ul>
         </article>
@@ -124,7 +287,7 @@
           <p class="pb1">Engineer in the Envato Studio team</p>
           <ul class="bp ml3">
             <li><p>Started while studying full-time at uni.</p></li>
-            <li><p>Worked in a small cross functional team which built and launched the envato studio freelance marketplace.</p></li>
+            <li><p>Worked in a small cross functional team which built and launched the Envato studio freelance marketplace.</p></li>
             <li><p>Led projects related to search, real-time messaging and user presence detection, analytics and experimented with new concepts for UIs and growth experiments.</p></li>
           </ul>
         </article>
@@ -134,7 +297,7 @@
         <article class="pb2 ml1">
           <h4 class="pv1">Chairperson</h4>
           <p class="pb1"><span class="bold">The Spiritual Assembly of the Bahá'ís of Melbourne</span> | Apr 2022 - Present</p>
-          <p class="pb1">Serving as an elected official helping to administer the administrative functions of the Baha’i community in Melbourne.</p>
+          <p class="pb1">Serving as an elected official helping to administer the administrative functions of the Baha'i community in Melbourne.</p>
           <ul class="bp ml3">
             <li><p>Helping to run meetings in a way that promotes consultation.</p></li>
             <li><p>Provide support to other members of the assembly.</p></li>
@@ -146,7 +309,7 @@
           <p class="pb1">Secretary of the Spiritual Assembly of the Bahá'ís of Melbourne.</p>
           <ul class="bp ml3">
             <li><p>Taking minutes during meetings.</p></li>
-            <li><p>Handling all corospondance in and out of the assembly.</p></li>
+            <li><p>Handling all correspondence in and out of the assembly.</p></li>
             <li><p>Handling all communication to between members of the community and the assembly.</p></li>
           </ul>
         </article>
